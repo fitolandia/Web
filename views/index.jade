@@ -1,0 +1,63 @@
+doctype html
+html(class="no-js" lang="en")
+    head
+        title  six tomatoes
+        meta(charset="utf-8")
+        link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet")
+        link(href="css/main.css" rel="stylesheet")
+        link(href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css')
+        link(href='css/animate.css' rel='stylesheet' type='text/css')
+        body
+
+            section(class="nav")
+                div(class="col-md-12 center-block no float top-space text-left")
+                    nav(class="navbar navbar-inverse")
+                        div(class="container")
+                            div(class="navbar-header")
+                                a(class="Under Song" href="")
+                                    img(src="imgs/logo2.png")
+                            div(class="nav navbar-nav navbar-right" style="margin-top:0.5em")
+                                ul(class="form-group")
+                                    div(class="col-lg-4")
+                                        input(type="text" class="form-control" placeholder="Usuario")
+                                    div(class="col-lg-4")
+                                        input(type="password" class="form-control" placeholder="Contraseña")
+                                    div(class="col-lg-4")
+                                        button(type="submit" class="btn btn-default") Ingresar
+
+        div(class="container col-md-12")
+            .jumbotron
+                section(class="main row")
+                    div(class="col-md-8")
+                        div(class="col-md-8 center-block no-float top-space")
+                            img(src="imgs/boy_guitar.jpg" class="animated fadeIn delay-1")
+                            h1(class="pacifico big green animated fadeIn delay-1") Under Song
+                            div(class="animated fadeInDown")
+                                h2 Ven, comparte, escucha, sorprendete
+                                nav
+                                    a(href="banda/discografia" class="right-space") Muro
+                                    a(href="banda/longplay" class="right-space") Subir disco
+                                    a(href="banda/discos" class="right-space")  disco
+                                    a(href="" class="right-space") Acerca de
+                    section(class="full-height text-center" id="main-content")
+                    div(class="col-md-4")
+                        form(method="post" action="/inicio" style="margin-top:1.5em;")
+                        .jumbotron
+                            h2 Registrate!
+                            section(class="full-height text-center" id="main-content")
+                                form(method="post" action="/inicio")
+                                    div(class="row")
+                                        //arreglar css porque span no funciona
+                                        div(class="span6")
+                                            input.form-control(type='text', name= "nombre", placeholder='Nombre...' style="margin-top:0.5em")
+                                            input.form-control(type='text', name= "apellido", placeholder='Apellido...' style="margin-top:0.5em")
+                                        input.form-control(type='text', name= "correo", placeholder='Correo Electronico...' class="form-control" style="margin-top:0.5em")
+                                        input.form-control(type="password", name= "contraseña", placeholder='contraseña...' class="form-control" style="margin-top:0.5em")
+                                        input.form-control(type='text', name= "instrumento", placeholder='Instrumento...' class="form-control" style="margin-top:0.5em")
+                                        input.form-control(type='date', name= "fecha", placeholder='Naciemiento...' class="form-control" style="margin-top:0.5em")
+                                        button.btn.btn-info(type='submit' class="large form-control" style="margin-top:0.5em") Listo!
+
+
+script(src="//code.jquery.com/jquery-1.11.3.min.js")
+script(src="js/main.js")

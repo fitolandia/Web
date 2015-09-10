@@ -1,0 +1,23 @@
+extends ../layout
+block nav-bar
+    h2(class='pacifico big blue') Discografia
+    p Disco agregado
+    div(class="row")
+            div(class="col-md-4")
+            div(class="col-md-4")
+                each disco in Discos
+                        div(class="container-fluid")
+                            div(class="row")
+                                div(class="col-sm-12 col-md-12")
+                                    div(class="thumbnail")
+                                        h3= disco.titulo
+                                            img(src="#{ disco.imgUrl }")
+                                            div(class="caption")
+                                                p= disco.descripcion
+                                                p
+                                                    a.btn.btn-primary(href='#', role='button') Escuchar!
+                                                    a.btn.btn-default(href='#', role='button') Compartir!
+            div(class="col-md-4")
+
+script(src="//code.jquery.com/jquery-1.11.3.min.js")
+script(src="js/main.js")

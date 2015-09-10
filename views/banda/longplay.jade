@@ -1,0 +1,25 @@
+extends ../layout.jade
+block nav-bar
+    div(class="col-md-5 center-block no-float top-space text-left")
+        h1 agregar disco
+        //accion post para asociar con la BD y multipart para cargar la imagen
+        form(method="post", action="/discografia", style="margin-top:1.5em;", enctype="multipart/form-data")
+            div(class="form-group")
+                label Disco
+                input.form-control(type='text', name="titulo", placeholder='Nombre del Disco', class="form-control")
+            div(class="form-group")
+                label Cargar temas
+                input(type='file' name='music_avatar')
+            div(class="form-group")
+                label Tapa del disco
+                input(type='file' name='image_avatar')
+            div(class="form-group")
+                label Disco
+                input.form-control(type='text', name= "descripcion", placeholder='Descripción...')
+            div(class="form-group text-rigth")
+                button.btn.btn-info(type='submit') Guardar
+
+
+
+script(src="https://code.jquery.com/jquery-2.1.1min.js")
+script(src="js/main.js")
